@@ -12,7 +12,7 @@
 <tr><td>Please enter trainee Id:-</td>
 <td><input type="text" name="deleteId"/></td>
 <td><input type="submit" value="Find"/></td></tr></table></form><br><br>
-<form action="deletetrainee/${list.traineeId}"  method="post" modelAttribute="trainee"><table>
+<form action="deletetrainee/${list.id}"  method="post" modelAttribute="trainee"><table>
 <tr><th>Trainee Id</th>
 <th>Trainee Name</th>
 <th>Trainee Location</th>
@@ -21,10 +21,10 @@
 </tr>
 
 <tr>
-<td><input type="text" value="${list.traineeId}"  readonly/></td>
-<td><input type="text" value="${list.traineeName}"  readonly/></td>
-<td><input type="text" value="${list.traineeLocation}"  readonly/></td>
-<td><input type="text" value="${list.traineeDomain}"  readonly/></td>
+<td><input type="text" value="${list.id}"  readonly/></td>
+<td><input type="text" value="${list.name}"  readonly/></td>
+<td><input type="text" value="${list.location}"  readonly/></td>
+<td><input type="text" value="${list.domain}"  readonly/></td>
 <td><input type="submit" Value="Delete"/></td></tr>
 </table></form>
 </body>
